@@ -48,8 +48,9 @@ blCollection = mydb['baselight']
 xytechCollection = mydb['xytech']
 
 #establishes connection to frameio host and project
-client = FrameioClient("fio-u-OJ4wH42Spv5htxLkYAkAyxf9C8T_Mq45BAAzUdLI8QmL49PlTmHDZdnepuenWJkc")
-the_crucible = client.projects.get("e75fe748-5ec9-48a7-a366-20f07d9546fb")
+#token and projectID removed for upload
+client = FrameioClient()
+the_crucible = client.projects.get()
 
 #set up spreadsheet workbook and main worksheet
 wb = x.Workbook('project3.xlsx')
